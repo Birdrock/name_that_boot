@@ -12,7 +12,7 @@ var GameField = function() {
     field.append("<form class='choices'></form>");
 
     $.each(card.sampleNames, function(index, name){
-      $("form").append("<div class='choice'><input type='radio' name='card' value=\"" + name + "\"><label class='choiceLabel'>" + name + "</label></div>");
+      $("form").append("<div class='choice'><label class='choiceLabel'><input type='radio' name='card' value=\"" + name + "\">" + name + "</label></div>");
     });
 
   }
@@ -140,7 +140,7 @@ $(document).ready(function(){
     game.initGame($("select").val(), game.displayCard);
   });
 
-  $(".gameField").on("click", "input[type='radio']", function(){
+  $(".gameField").on("change", "input[type='radio']", function(){
     game.updateScore($(this).val());
   });
 
