@@ -23,8 +23,8 @@ gem 'omniauth-oauth2'
 gem 'omniauth-dbc', :git => 'https://github.com/Devbootcamp/omniauth-dbc.git'
 gem 'json'
 gem 'dbc-ruby'
+gem 'rspec'
 
 group :test do
   gem 'faker'
-  gem 'rspec'
 end
