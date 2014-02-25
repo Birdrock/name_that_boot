@@ -1,0 +1,19 @@
+<div class="gameHeader">
+  <h2 class="title gameTitle">Name That Boot!</h2>
+  <img src="<%= current_user.gravatar %>" />
+  <a href="/sign_out" class="pinkButton gameButton">Sign Out</a>
+</div>
+<div class="gameField">
+  <h2>Select a Cohort and Click 'Start Game' to begin.</h2>
+  <form>
+    <span class="custom-dropdown custom-dropdown--white">
+      <select class="custom-dropdown__select custom-dropdown__select--white">
+          <option value="">Select a Cohort</option>
+          <% @cohorts.each do |cohort| %>
+          <option value="<%= cohort.id %>"><%= cohort.name %></option>
+          <% end %>
+      </select>
+    </span>
+  </form>
+  <a href="#" id="startGame" class="purpleButton splashButton">Start Game</a>
+</div>

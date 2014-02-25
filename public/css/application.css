@@ -1,0 +1,353 @@
+body {
+  background: #ccc;
+}
+
+.outer {
+  display: table; position: absolute; height: 100%; width: 100%;
+}
+
+.middle {
+  display: table-cell; vertical-align: middle;
+}
+
+.container {
+  background: #fff;
+  width: 740px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 25px solid black;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  padding: 40px 80px 10px 80px;
+  text-align: center;
+}
+
+h1 {
+  padding:0;
+  margin:0;
+}
+
+.title {
+  font-family: 'Bowlby One SC', cursive;
+}
+
+.splashTitle {
+  margin-top:25px;
+  font-size: 4.5em;
+}
+
+.gameTitle {
+  font-size: 3em;
+  margin:0;
+}
+
+.subtitle {
+  font-size: 1.5em;
+}
+
+.pinkButton {
+  -moz-box-shadow:inset 0px 0px 0px 0px #fbafe3;
+  -webkit-box-shadow:inset 0px 0px 0px 0px #fbafe3;
+  box-shadow:inset 0px 0px 0px 0px #fbafe3;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff5bb0), color-stop(1, #ef027d) );
+  background:-moz-linear-gradient( center top, #ff5bb0 5%, #ef027d 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0', endColorstr='#ef027d');
+  background-color:#ff5bb0;
+  text-indent:0;
+  border:1px solid #ee1eb5;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-weight:bold;
+  font-style:normal;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:2px 4px 3px #c70067;
+}
+
+.splashButton {
+    margin:50px 50px 0 50px;
+    height:62px;
+    line-height:62px;
+    width:192px;
+    font-size:24px;
+    -webkit-border-top-left-radius:15px;
+    -moz-border-radius-topleft:15px;
+    border-top-left-radius:15px;
+    -webkit-border-top-right-radius:15px;
+    -moz-border-radius-topright:15px;
+    border-top-right-radius:15px;
+    -webkit-border-bottom-right-radius:15px;
+    -moz-border-radius-bottomright:15px;
+    border-bottom-right-radius:15px;
+    -webkit-border-bottom-left-radius:15px;
+    -moz-border-radius-bottomleft:15px;
+    border-bottom-left-radius:15px;
+}
+
+.gameButton {
+    height:50px;
+    line-height:50px;
+    width:150px;
+    font-size:20px;
+    margin-top: 10px;
+    -webkit-border-top-left-radius:15px;
+    -moz-border-radius-topleft:15px;
+    border-top-left-radius:15px;
+    -webkit-border-top-right-radius:15px;
+    -moz-border-radius-topright:15px;
+    border-top-right-radius:15px;
+    -webkit-border-bottom-right-radius:15px;
+    -moz-border-radius-bottomright:15px;
+    border-bottom-right-radius:15px;
+    -webkit-border-bottom-left-radius:15px;
+    -moz-border-radius-bottomleft:15px;
+    border-bottom-left-radius:15px;
+}
+
+.pinkButton:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff5bb0) );
+  background:-moz-linear-gradient( center top, #ef027d 5%, #ff5bb0 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d', endColorstr='#ff5bb0');
+  background-color:#ef027d;
+}
+
+.pinkButton:active {
+  position:relative;
+  top:1px;
+}
+
+.gameHeader {
+  height:74px;
+}
+.gameHeader h2 {
+  float:left;
+}
+
+.gameHeader img {
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin-top: 10px;
+}
+
+.gameHeader a {
+  float:right;
+}
+
+.gameField {
+  padding: 30px 0;
+}
+
+.gameField h2 {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.gameField h1 {
+  margin-top: 40px;
+  font-size: 3em;
+}
+
+.spinner {
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+}
+
+.purpleButton {
+  -moz-box-shadow:inset 0px 0px 0px 0px #e184f3;
+  -webkit-box-shadow:inset 0px 0px 0px 0px #e184f3;
+  box-shadow:inset 0px 0px 0px 0px #e184f3;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c123de), color-stop(1, #a20dbd) );
+  background:-moz-linear-gradient( center top, #c123de 5%, #a20dbd 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c123de', endColorstr='#a20dbd');
+  background-color:#c123de;
+  text-indent:0;
+  border:1px solid #a511c0;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-weight:bold;
+  font-style:normal;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:2px 4px 3px #9b14b3;
+}
+
+.startButton:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a20dbd), color-stop(1, #c123de) );
+  background:-moz-linear-gradient( center top, #a20dbd 5%, #c123de 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a20dbd', endColorstr='#c123de');
+  background-color:#a20dbd;
+}
+
+.startButton:active {
+  position:relative;
+  top:1px;
+}
+
+.custom-dropdown__select{
+  font-size: 24px; /* inherit size from .custom-dropdown */
+  padding: .75em; /* add some space*/
+  margin: 0; /* remove default margins */
+}
+
+.custom-dropdown__select--white {
+  background-color: #ccc;
+  color: #000;
+  font-weight:bold;
+  text-shadow:2px 4px 3px #999;
+
+}
+
+@supports (pointer-events: none) and
+    ((-webkit-appearance: none) or
+    (-moz-appearance: none) or
+    (appearance: none)) {
+
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .custom-dropdown__select {
+    padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+    border: 0;
+    border-radius: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .custom-dropdown::before,
+  .custom-dropdown::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .custom-dropdown::after { /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 1em;
+    font-size: 1em;
+    line-height: 1;
+    right: .75em;
+    top: 50%; margin-top: -.5em;
+  }
+
+  .custom-dropdown::before { /*  Custom dropdown arrow cover */
+    width: 2.25em;
+    right: 5px; top: 0; bottom: 0;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .custom-dropdown__select[disabled] {
+    color: rgba(0,0,0,.3);
+  }
+
+  .custom-dropdown.custom-dropdown--disabled::after {
+    color: rgba(0,0,0,.1);
+  }
+
+  /* White dropdown style */
+  .custom-dropdown--white::before {
+    top: .5em; bottom: .5em;
+    background-color: #ccc;
+    border-left: 1px solid rgba(0,0,0,.1);
+  }
+
+  .custom-dropdown--white::after {
+    color: rgba(0,0,0,.9);
+  }
+
+  /* FF only temp fix */
+  @-moz-document url-prefix() {
+    .custom-dropdown__select       { padding-right: .9em }
+    .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+    .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+  }
+}
+
+.card {
+  border: 5px solid black;
+  border-radius: 50%;
+  float:left;
+  margin-left: 80px;
+}
+
+.choices {
+  float:left;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.choice {
+  vertical-align: middle;
+  margin: 20px 0;
+}
+
+.choiceLabel {
+  margin-left: 10px;
+  font-size: 2em;
+  display: inline;
+}
+
+.prompt {
+  clear:both;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.prompt p {
+  font-size: 1.5em;
+  float: left;
+  margin:0;
+  margin-top: 12px;
+}
+
+.prompt a {
+  float:right;
+}
+
+.prompt .correct {
+  font-size: 2em;
+  margin-left: 415px;
+  margin-top: 7px;
+}
+
+.gameField {
+  overflow: auto;
+}
+
+.nextButton {
+    margin:0;
+    height:50px;
+    line-height:50px;
+    width:150px;
+    font-size:1.5em;
+    -webkit-border-top-left-radius:15px;
+    -moz-border-radius-topleft:15px;
+    border-top-left-radius:15px;
+    -webkit-border-top-right-radius:15px;
+    -moz-border-radius-topright:15px;
+    border-top-right-radius:15px;
+    -webkit-border-bottom-right-radius:15px;
+    -moz-border-radius-bottomright:15px;
+    border-bottom-right-radius:15px;
+    -webkit-border-bottom-left-radius:15px;
+    -moz-border-radius-bottomleft:15px;
+    border-bottom-left-radius:15px;
+}
+
+.score {
+  font-size: 2em;
+}
+
+.playAgain {
+  margin-top: 20px;
+}
