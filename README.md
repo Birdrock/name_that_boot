@@ -10,7 +10,7 @@ To Be Hosted at: http://name-that-boot.herokuapp.com
 
 * Set up the following environment variables on your system:
 
-  `DBC_API`, `OAUTH_CLIENT_ID`, `OAUTH_CLIENT_SECRET` - Are all environment variables that are required.
+  `DBC_API`, `OAUTH_CLIENT_ID`, and `OAUTH_CLIENT_SECRET`
 
 * Run 'bundle install' at the command line in the project folder
 
