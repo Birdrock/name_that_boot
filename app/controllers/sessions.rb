@@ -7,8 +7,8 @@ get '/sign_in' do
 end
 
 get '/auth/:provider/callback' do
-  @current_user =  User.create_or_find_user_from_oauth(request.env['omniauth.auth'].info)
-  session[:user_id] = @current_user.id
+  user_attributes = request.env['omniauth.auth'].info
+  session[:user_attributes] = user_attributes
   token = request.env['omniauth.auth'].credentials
   session[:oauth_token] = token_as_hash(token)
   redirect to ('/game')
